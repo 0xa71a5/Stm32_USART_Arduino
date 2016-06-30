@@ -1,30 +1,13 @@
-/**
-  ******************************************************************************
-  * @file    main.c
-  * @author  fire
-  * @version V1.0
-  * @date    2013-xx-xx
-  * @brief   用3.5.0版本库建的工程模板
-  ******************************************************************************
-  * @attention
-  *
-  * 实验平台:野火 iSO STM32 开发板 
-  * 论坛    :http://www.chuxue123.com
-  * 淘宝    :http://firestm32.taobao.com
-  *
-  ******************************************************************************
-  */
+/*
+**@Date:20160630
+**@Author:At1a5
+*/
   
 #include "stm32f10x.h"
 #include "usart.h"
 
 uint64_t millis=0;
-/**
-  * @brief  主函数
-  * @param  无
-  * @retval 无
-  */
-	
+
 void delay(uint32_t delayTime)
 {
 	SysTick_Config(SystemCoreClock/1000);
